@@ -1,0 +1,17 @@
+<h1>Notes#edit</h1>
+
+<%= form_for@note do |f| %>
+
+<%= f.label ("Title:") %><br>
+<%=f.text_field :title%><br>
+
+<%= f.label ("Note:") %><br>
+<%= f.text_field :content%><br>
+
+<%= f.submit "update" %>
+<%end%>
+
+
+
+
+<p>Find me in app/views/notes/edit.html.erb</p>

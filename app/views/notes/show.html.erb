@@ -1,0 +1,19 @@
+<h1>Notes#show</h1>
+
+<p>
+  <strong>Title:</strong>
+  <%= @note.title %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @note.content %>
+</p>
+
+<div id="links">
+<%= link_to 'Home', notes_path %> |
+<%= link_to 'Edit', edit_note_path(@note) %> |
+<%= link_to 'Back', notes_path %>
+</div>
+
+<p>Find me in app/views/notes/show.html.erb</p>
