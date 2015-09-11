@@ -13,7 +13,7 @@
     <%@notes.each do |note| %>
       <tr>
         <td><%= note.title %></td>
-        <td><%= note.content%></td>
+        <td><%= truncate note.content%></td>
        </tr>
        <tr>
         <td><%= link_to 'View note', note %></td>

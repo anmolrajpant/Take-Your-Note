@@ -1,7 +1,6 @@
 class NotesController < ApplicationController
-  #before_action :find_params, only: {:show, :edit, :update, :destroy}
   def index
-@notes = Note.all
+    @notes = Note.all
   end
 
   def show
@@ -42,9 +41,4 @@ class NotesController < ApplicationController
   def note_params
     params.require(:note).permit(:title, :content)
   end
-
-  def find_note
-    @note = Notes.find(params[:id])
-  end
-
 end
