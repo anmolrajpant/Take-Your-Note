@@ -1,5 +1,5 @@
 class NotesController < ApplicationController
-  #before_action :find_note, only: {:show, :edit, :update, :destroy}
+  #before_action :find_params, only: {:show, :edit, :update, :destroy}
   def index
 @notes = Note.all
   end
@@ -16,19 +16,26 @@ class NotesController < ApplicationController
     @note = Note.new(note_params)
 
     if @note.save
-      redirect_to @notes_path
-    else
-      render 'new'
+      redirect_to notes_path
     end
   end
 
   def edit
+    @note = Note.find(params[:id])
   end
 
   def update
+    @note = Note.find(params[:id])
+    if @note.update(note_params)
+      redirect_to note_path
+    end
   end
 
   def destroy
+    @note = Note.find(params[:id])
+    if @note.destroy
+      redirect_to notes_path
+    end
   end
 
   private
