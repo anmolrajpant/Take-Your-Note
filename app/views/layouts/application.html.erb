@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<div id="logo">
+			<h3 style="color:white;">Take Your Note</h3>
+		</div>
+	<nav>
+		<ul>
+			<li><%= link_to 'Home', notes_path %> </li>
+			<li><%= link_to 'Add note', new_note_path %></li>
+		</ul>	
+	</nav>
+	
 <%= yield %>
+
+
+
 
 </body>
 </html>
