@@ -3,12 +3,12 @@
   <strong style="color:white;"><%= @note.title %></strong>
 </p>
 
-<p style="border: 1px ; width: 50%; margin: 0px;color:white; background-color: rgba(0, 0, 0, 0.26); padding: 10px; border-radius:10px;">
+<p style="border: 1px ; width: 50%; margin: 0px; color:white; background-color: rgba(0, 0, 0, 0.26); padding: 10px; border-radius:10px;">
   <%= @note.content %>
 </p>
 
 <div id="links">
-	<li><%= link_to 'Edit note', edit_note_path(@note) %> </li>
-	<li><%= link_to 'Delete note', @note, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+	<li><%= link_to 'Edit', edit_note_path(@note) %> </li>
+	<li><%= link_to 'Delete', @note, method: :delete, data: { confirm: 'Are you sure?' } %></li>
 </div>
 
