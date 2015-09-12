@@ -3,18 +3,15 @@ body{
 	background:#554d7d;
 }
 
-
-
-#logo
-	{	
+#logo{	
 		float: left;
 		background-color:red;
 		border-bottom-left-radius:10px;
 		height:55px;
+		color:white;
 	}
 
 nav{
-
 	background: #9078a8;
 	margin-top: 25px;
 	height: 55px;
@@ -23,47 +20,32 @@ nav{
 	}
 
 
-nav ul
-{
+nav ul{
 	padding:20px;
 	text-align: right;
-		
 	}
 
-nav ul li
-{
-
+nav ul li{
 	display:inline;
 	margin:0px;
 	font-size: 20px;
 	}	
 
-nav li a
-{
+nav li a{
 	text-decoration: none;
 	color:white;
 	padding: 5px 5px 15px 5px;
 	}
 
-nav li a:hover
-{
+nav li a:hover{
 	background:#554d7d;
-
 }
 
-
-hr
-	
-	{	
-		color: black;
-		height: 5px;
-	}
-#links
-{
+#links{
 	margin-right:-5px;
 	padding:5px;
-
 }
+
 #links li{
 	display:inline;
 	background-color: white;
@@ -71,13 +53,36 @@ hr
 	text-decoration: none;
 	border-radius:5px;
 }
+
 #links li a{
 	text-decoration: none;
 	color:black;
 	font-size:12px;
 }
-#view_button a{
-	text-decoration: none;
-	background-color:white;
-		border-radius:5px;
+
+#index_title{
+	display:left;
+}
+
+#index_content{
+	border: 1px;
+	width: 25%;
+	margin: 0px;
+	background-color: rgba(0, 0, 0, 0.26);
+	padding: 5px;
+	border-radius:10px;
+}
+
+#show_title{
+	color: white;
+}
+
+#show_content{
+	border: 1px ;
+	width: 50%;
+	margin: 0px;
+	color:white;
+	background-color: rgba(0, 0, 0, 0.26);
+	padding: 10px;
+	border-radius:10px;
 }

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TakeYourNote</title>
+  <title>Take Your Note</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 	<div id="logo">
-			<h3 style="color:white;">Take Your Note</h3>
+			<h3>Take Your Note</h3>
 		</div>
 	<nav>
 		<ul>
 			<li><%= link_to 'Home', notes_path %> </li>
-			<li><%= link_to 'Add note', new_note_path %></li>
+			<li><%= link_to 'New note', new_note_path %></li>
 		</ul>	
 	</nav>
 	

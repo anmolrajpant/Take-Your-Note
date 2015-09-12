@@ -12,14 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label ("Title:") %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, placeholder: 'Title of your Note' %>
   </div>
   <div class="field">
-    <%= f.label ("Note:") %><br>
-    <%= f.text_area :content %>
+    <%= f.text_area :content, placeholder: "Let's write the note", rows:18, cols: 128 %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Let's save" %>
   </div>
 <% end %>

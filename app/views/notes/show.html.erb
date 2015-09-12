@@ -1,14 +1,13 @@
-
-<p>
-  <strong style="color:white;"><%= @note.title %></strong>
+<p id="show_title">
+  <strong><%= @note.title %></strong>
 </p>
 
-<p style="border: 1px ; width: 50%; margin: 0px; color:white; background-color: rgba(0, 0, 0, 0.26); padding: 10px; border-radius:10px;">
+<p id="show_content">
   <%= @note.content %>
 </p>
 
 <div id="links">
-	<li><%= link_to 'Edit', edit_note_path(@note) %> </li>
-	<li><%= link_to 'Delete', @note, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+	<li><%= link_to 'I need to change it', edit_note_path(@note) %> </li>
+	<li><%= link_to 'Lets remove this', @note, method: :delete, data: { confirm: 'Are you sure?' } %></li>
 </div>
 

@@ -1,11 +1,10 @@
 <%= form_for @note do |f| %>
 
-<p style="display:left;"<%= f.label ("Title:") %><br>
-<%=f.text_field :title%><br>
+	<p style="display:left;">
+		<%=f.text_field :title%><br>
 
-<%= f.label ("Note:") %><br>
-<%= f.text_area :content%><br>
+		<%= f.text_area :content, cols: 128, rows: 23%><br>
 
-<%= f.submit "update" %>
-</p>
+		<%= f.submit "Let's save it" %>
+	</p>
 <%end%>

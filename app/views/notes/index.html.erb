@@ -2,9 +2,10 @@
 
     <% @notes.each do |note| %>
 
-        <p style="display:left "><strong><%= note.title %></strong><br>
-        <P style="border: 1px ; width: 25%; margin: 0px; background-color: rgba(0, 0, 0, 0.26); padding: 5px; border-radius:10px; "><%= truncate note.content%></P><br>
-       
-       <div id="view_button"> <%= link_to 'View', note %></div>
-       
+        <p id="index_title">
+        	<strong><%= note.title %></strong><br>
+        </p>
+        <P div="index_content">
+        	<%= truncate note.content, length: 25 %> <%= link_to 'Read more', note %>
+        </P>  
     <% end %>
