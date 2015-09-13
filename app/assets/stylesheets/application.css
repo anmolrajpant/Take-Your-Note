@@ -85,4 +85,9 @@ nav li a:hover{
 	background-color: rgba(0, 0, 0, 0.26);
 	padding: 10px;
 	border-radius:10px;
+	text-align: justify;
+}
+
+#show_display{
+	margin-left: 25%;
 }

@@ -1,13 +1,15 @@
-<p id="show_title">
-  <strong><%= @note.title %></strong>
-</p>
+<div id="show_display">
+	<p id="show_title">
+	  <strong><%= @note.title %></strong>
+	</p>
 
-<p id="show_content">
-  <%= @note.content %>
-</p>
+	<p id="show_content">
+	  <%= @note.content %>
+	</p>
 
-<div id="links">
-	<li><%= link_to 'I need to change it', edit_note_path(@note) %> </li>
-	<li><%= link_to 'Lets remove this', @note, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+	<div id="links">
+		<li><%= link_to 'I need to change it', edit_note_path(@note) %> </li>
+		<li><%= link_to 'Lets remove this', @note, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+	</div>
 </div>
 
