@@ -1,11 +1,11 @@
 
-
+<div id= "content">
     <% @notes.each do |note| %>
-
-        <p id="index_title">
-        	<strong><%= note.title %></strong><br>
-        </p>
-        <P div="index_content">
-        	<%= truncate note.content, length: 25 %> <%= link_to 'Read more', note %>
-        </P>  
+        <div class="content_wrapper">
+            <strong><%= note.title %></strong><br>
+            <div id="content-show">
+               <%= truncate note.content, length: 50 %> <%= link_to 'Read more', note %>
+            </div>
+        </div>
     <% end %>
+</div>

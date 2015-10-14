@@ -55,5 +55,3 @@ group :development do
   gem 'spring'
 end
 
-gem 'devise', '~> 3.5.2'
-gem 'haml', '~> 4.0.7'
